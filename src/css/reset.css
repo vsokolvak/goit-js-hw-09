@@ -34,6 +34,11 @@ img {
   height: auto;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
 }
