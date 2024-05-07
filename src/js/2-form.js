@@ -23,11 +23,11 @@ function submitForm(form) {
 
   const formElements = form.currentTarget.elements;
 
-  if (formElements.email.value.length === 0) {
+  if (formElements.email.value.trim().length === 0) {
     showErrMsg();
     return null;
   }
-  if (formElements.message.value.length === 0) {
+  if (formElements.message.value.trim().length === 0) {
     showErrMsg();
     return null;
   }
