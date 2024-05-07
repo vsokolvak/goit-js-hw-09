@@ -12,8 +12,8 @@ formEl.addEventListener('submit', submitForm);
 formEl.addEventListener('input', inputForm);
 
 function inputForm(form) {
-  formData.email = form.currentTarget.elements.email.value;
-  formData.message = form.currentTarget.elements.message.value;
+  formData.email = form.currentTarget.elements.email.value.trim();
+  formData.message = form.currentTarget.elements.message.value.trim();
 
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 };
